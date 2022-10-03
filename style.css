@@ -135,17 +135,22 @@ ul {
 }
 
 .main__screen-bg {
-  margin-bottom: 70px;
+  //margin-bottom: 70px;
   margin: 0;
-  padding: 0;
+  padding: 30px 0 0;
   //background-image: url("images/bg-min.jpg");
   //background-repeat: no-repeat;
 }
 
 .main__screen {
-  height: 100vh;
   display: flex;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 500px) {
+  .main__screen {
+    height: 100vh;
+  }
 }
 
 .main__text-block {
@@ -259,10 +264,6 @@ ul {
   .main__icons-blocks {
     flex-direction: column;
   }
-}
-
-.foto__block-section {
-  padding-top: 50px;
 }
 
 .foto__title {
