@@ -593,12 +593,12 @@ ul {
 .contacts__map {
   border-radius: 10px;
   max-width: 596px;
-  height: 433px;
 }
 
 .map__adress {
   width: 560px;
-  height: 400px;
+  height: 100%;
+  border: none;
 }
 
 .contacts__title span {
