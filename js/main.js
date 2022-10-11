@@ -1,4 +1,4 @@
-const swiper = new Swiper('.foto__swiper', {
+const swiper = new Swiper('.swiper', {
 
    slidesPerView: 1,
    spaceBetween: 300,
