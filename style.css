@@ -339,10 +339,18 @@ ul {
   padding-top: 40px;
 }
 
+.swiper-slide__text-block {
+  margin-bottom: 15px;
+}
+
 .feedback__swiper {
   max-width: 1048px;
   margin-top: 50px;
   margin-bottom: 70px;
+}
+
+.feedback__slider {
+  margin-bottom: 10px;
 }
 
 .swiper-slide__block {
