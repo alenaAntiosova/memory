@@ -1,11 +1,10 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.foto__swiper', {
 
    slidesPerView: 1,
    spaceBetween: 300,
    loop: true,
 
-   navigation: {
-     nextEl: '.swiper-button-next',
-     prevEl: '.swiper-button-prev',
-   },
+   pagination: {
+    el: '.swiper-pagination',
+  },
 });

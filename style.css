@@ -135,16 +135,22 @@ ul {
 }
 
 .main__screen-bg {
-  //margin-bottom: 70px;
   margin: 0;
   padding: 30px 0 0;
-  //background-image: url("images/bg-min.jpg");
-  //background-repeat: no-repeat;
+  background-image: url("images/bg-min.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main__screen {
   display: flex;
   margin-bottom: 40px;
+}
+
+@media (max-width: 690px) {
+  .main__screen-bg {
+    background-image: none;
+  }
 }
 
 @media (max-width: 500px) {
@@ -300,6 +306,10 @@ ul {
   margin-right: 30px;
 }
 
+.swiper-pagination-bullet-active {
+  background: red;
+}
+
 .foto__swiper-wrapper {
   padding-top: 70px;
   margin-bottom: 180px;
@@ -366,10 +376,10 @@ ul {
 }
 
 .order__section {
-  //background-image: url("images/bg-min.jpg");
-  //padding-top: 70px;
+  background-image: url("images/bg-min.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-bottom: 50px;
-  //background-repeat: no-repeat;
 }
 
 .order__blocks {
@@ -398,6 +408,12 @@ ul {
   .order__blocks {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 690px) {
+  .order__section {
+    background-image: none;
   }
 }
 
@@ -469,8 +485,10 @@ ul {
 }
 
 .form__section {
-  //background-image: url("images/bg-min.jpg");
-  //background-repeat: no-repeat;
+  background-image: url("images/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
   height: 600px;
   padding-top: 70px;
 }
@@ -478,12 +496,15 @@ ul {
 .form__wrapper {
   display: flex;
   border-radius: 10px;
-  background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 3.8px 0.2px rgba(45, 67, 110, 0.18);
   max-width: 1200px;
   min-height: 387px;
-  background-color: #fafafa;
+  background-color: #f6f6f4;
+  background-image: url("images/form-bg.jpg");
+  background-size: 65%, contain;
   margin-bottom: 70px;
+  background-repeat: no-repeat;
+  background-position: right top;
 }
 
 .form__block {
@@ -504,7 +525,7 @@ ul {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
-  width: 100%;
+  width: 85%;
 }
 
 .form__input {
@@ -526,28 +547,62 @@ ul {
   border-radius: 4px;
   background-color: rgb(240, 240, 240);
   opacity: 0.741;
-  width: 100%;
+  width: 85%;
   height: 60px;
   margin-bottom: 20px;
 }
 
-@media (max-width: 690px) {
-  .form__input-comment {
-    width: 90%;
-  }
-  .form__text {
-    width: 80%;
-  }
+@media (max-width: 993px) {
   .form__inputs-row {
     flex-direction: column;
     margin-bottom: 0;
   }
+  .form__input-comment {
+    width: 65%;
+  }
+  .form__text {
+    width: 80%;
+  }
   .form__input {
-    margin-bottom: 5px;
-    width: 90%;
+    margin-bottom: 7px;
+    width: 77%;
   }
   .form__block {
     padding: 30px 30px;
+  }
+
+  .form__wrapper {
+    background-size: 100%, contain;
+    background-position: 30px top;
+  }
+}
+
+@media (max-width: 690px) {
+  .form__section {
+    background-image: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .form__wrapper {
+    background-size: 110%, contain;
+    background-position: 30px top;
+  }
+}
+
+@media (max-width: 570px) {
+  .form__wrapper {
+    background-size: 120%, contain;
+    background-position: 40px top;
+  }
+}
+
+@media (max-width: 500px) {
+  .form__wrapper {
+    background-image: url("images/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
   }
 }
 
@@ -578,6 +633,10 @@ ul {
   margin-bottom: 30px;
 }
 
+.contacts__left-block {
+  margin-right: 20px;
+}
+
 .contacts__adress-block {
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
@@ -588,17 +647,6 @@ ul {
   padding: 50px 30px;
   text-align: left;
   line-height: 1.2;
-}
-
-.contacts__map {
-  border-radius: 10px;
-  max-width: 596px;
-  height: 433px;
-}
-
-.map__adress {
-  width: 560px;
-  height: 400px;
 }
 
 .contacts__title span {
@@ -626,6 +674,11 @@ ul {
   display: block;
   font-size: 14px;
   margin-bottom: 20px;
+}
+
+.map__adress {
+  width: 685px;
+  height: 515px;
 }
 
 .contacts__delivery-blocks {
@@ -669,13 +722,9 @@ ul {
     align-items: center;
     flex-direction: column;
   }
-  .contacts__map {
-    border-radius: 10px;
-    width: 100%;
-    padding-top: 20px;
-  }
-  .map__adress {
-    width: 100%;
+  .contacts__left-block {
+    margin-right: 0px;
+    margin-bottom: 20px;
   }
 }
 
@@ -696,6 +745,10 @@ ul {
   }
 
   .contacts__adress-block {
+    width: 100%;
+  }
+
+  .map__adress {
     width: 100%;
   }
 }
