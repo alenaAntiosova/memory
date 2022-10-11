@@ -156,6 +156,7 @@ ul {
 @media (max-width: 500px) {
   .main__screen {
     height: 100vh;
+    margin-bottom: 150px;
   }
 }
 
@@ -300,7 +301,7 @@ ul {
 }
 
 .swiper-slide__img-block--1 {
-  margin-right: 30px;
+  margin-left: 10px;
 }
 
 .swiper-pagination-bullet-active {

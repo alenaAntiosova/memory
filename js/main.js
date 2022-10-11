@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper', {
 
    slidesPerView: 1,
-   spaceBetween: 300,
+   spaceBetween: 320,
    loop: true,
 
    pagination: {
