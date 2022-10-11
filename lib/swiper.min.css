@@ -640,8 +640,14 @@ button.swiper-pagination-bullet {
   height: 450px;
 }
 
-@media (max-width: 615px) {
+@media (max-width: 620px) {
   .foto__swiper {
     height: 400px;
+  }
+}
+
+@media (max-width: 420px) {
+  .foto__swiper {
+    height: 320px;
   }
 }

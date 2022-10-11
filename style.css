@@ -335,6 +335,7 @@ ul {
 
 .feedback__title {
   margin-bottom: 50px;
+  padding-top: 40px;
 }
 
 .feedback__swiper {
@@ -425,6 +426,7 @@ ul {
 
 .order__section-title {
   margin-bottom: 50px;
+  padding-top: 40px;
 }
 
 .order__title {
@@ -441,6 +443,7 @@ ul {
 
 .product__title {
   margin-bottom: 50px;
+  padding-top: 40px;
 }
 
 .product-card__img {
@@ -495,7 +498,6 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
-  height: 600px;
   padding-top: 70px;
 }
 
@@ -605,19 +607,25 @@ ul {
 
 @media (max-width: 500px) {
   .form__wrapper {
-    background-image: url("images/bg2.jpg");
+    background-image: url("images/bg-min.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right top;
+    background-position: center;
+  }
+  .form__block {
+    padding: 20px 15px;
+  }
+  .form__input {
+    width: 100%;
+  }
+  .form__input-comment {
+    width: 85%;
   }
 }
 
 @media (max-width: 370px) {
   .form__text {
     font-size: 12px;
-  }
-  .form__block {
-    padding: 10px 10px;
   }
   .form__title {
     font-size: 15px;
@@ -655,7 +663,7 @@ ul {
   line-height: 1.2;
 }
 
-<<<<<<< HEAD ======= .contacts__map {
+.contacts__map {
   border-radius: 10px;
   max-width: 596px;
 }
@@ -666,7 +674,7 @@ ul {
   border: none;
 }
 
->>>>>>>bdbb584bfcf695586b0f95cc95106a1954c9870f .contacts__title span {
+.contacts__title span {
   display: block;
   font-weight: bold;
   max-width: 90px;
