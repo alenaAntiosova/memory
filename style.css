@@ -347,7 +347,6 @@ ul {
 .swiper-slide__block {
   display: flex;
   justify-content: space-around;
-  gap: 10px;
 }
 
 .swiper-slide__text-block {
@@ -386,7 +385,7 @@ ul {
   align-items: center;
   color: #e95252;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .order__blocks {
@@ -399,6 +398,7 @@ ul {
 
 .order__number {
   width: 230px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 991px) {
