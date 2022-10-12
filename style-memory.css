@@ -385,6 +385,10 @@ ul {
   padding-bottom: 50px;
 }
 
+.order__text {
+  line-height: 1.5;
+}
+
 .order__img {
   border: 2px solid;
   border-radius: 25px;
@@ -413,11 +417,16 @@ ul {
 
 @media (max-width: 991px) {
   .order__number {
-    width: 70%;
+    width: 90%;
     gap: 20px;
+    display: flex;
+    margin-bottom: 20px;
   }
   .order__text {
     text-align: justify;
+  }
+  .order__number-wrapper {
+    width: 90%;
   }
 }
 
